@@ -1,0 +1,29 @@
+{
+  "name": "PROJECT_NAME",
+  "version": "1.0.6",
+  "description": "",
+  "license": "MIT",
+  "author": "Tim Ruffles <timrruffles@googlemail.com> (http://truffles.me.uk)",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "rm -rf coverage && istanbul cover _mocha -- *.test.js",
+    "typecheck": "flow",
+    "start": "mocha *.test.js --recursive --watch"
+  },
+  "files": [
+    "PROJECT_NAME.js"
+  ],
+  "main": "./PROJECT_NAME.js",
+  "keywords": [
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "codecov": "^1.0.1",
+    "flow-bin": "^0.22.1",
+    "istanbul": "^1.0.0-alpha.2",
+    "mocha": "^2.4.5"
+  }
+}
